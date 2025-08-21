@@ -2,7 +2,6 @@
 
 This fork of the async-rdma repository aims to explore and enhance the integration of RDMA (Remote Direct Memory Access) with Rust, leveraging the language's safety and performance benefits. The primary goal is to continue the development of this library by improving its functionality, stability, and usability, while introducing new features to support advanced use cases and broader adoption in high-performance networking applications.
 
-[![Docs][docs-badge]][docs-url]
 [![GPL licensed][gpl-badge]][gpl-url]
 [![Build Status][actions-badge]][actions-url]
 
