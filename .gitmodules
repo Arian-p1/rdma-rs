@@ -2,3 +2,6 @@
 	path = rdma-env-setup
 	url = https://github.com/datenlord/rdma-env-setup.git
 	branch = main
+[submodule "rdma-sys"]
+	path = rdma-sys
+	url = https://github.com/Arian-p1/rdma-sys

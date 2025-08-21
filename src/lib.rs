@@ -93,7 +93,7 @@
     unused_results,
     variant_size_differences,
 
-    warnings, // treat all wanings as errors
+    // warnings, // treat all wanings as errors
 
     clippy::all,
     // clippy::restriction,
@@ -1742,7 +1742,7 @@ impl Rdma {
                 "Atomic operations are legal only when the remote address is on a naturally-aligned 8-byte boundary",
             ))
         } else {
-            let buf = self.alloc_local_mr(std::alloc::Layout::new::<[u8; 8]>())?;
+            let buf = self.alloc_local_mr(Layout::new::<[u8; 8]>())?;
             self.qp.atomic_cas(old_value, new_value, &buf, rm).await
         }
     }
@@ -3802,7 +3802,7 @@ impl Rdma {
 
     /// Get information of this qp for establishing a connection.
     ///
-    ///  
+    ///
     #[inline]
     #[must_use]
     pub fn get_qp_endpoint(&self) -> QueuePairEndpoint {
